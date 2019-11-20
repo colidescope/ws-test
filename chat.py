@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-Chat Server
-===========
-
-This simple application uses WebSockets to run a primitive chat server.
-"""
-
 import os
 import logging
 import redis
@@ -93,3 +86,14 @@ def outbox(ws):
 
 
 
+# if __name__ == "__main__":
+    # app.run(debug=True, host='0.0.0.0', port=5000)
+
+    # from gevent import pywsgi
+    # from geventwebsocket.handler import WebSocketHandler
+    # server = pywsgi.WSGIServer(('0.0.0.0', 5000), app, handler_class=WebSocketHandler)
+    # server.serve_forever()
+
+    # from gevent.pywsgi import WSGIServer
+    # http_server = WSGIServer(('0.0.0.0', 80), app)
+    # http_server.serve_forever()

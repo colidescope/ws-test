@@ -9,4 +9,7 @@ IF EXIST ".\env" (
     CALL pip install -r requirements.txt
     ECHO Dependencies successfully installed
 )
-CALL heroku local web -f Procfile.windows
+IF EXIST ".\local_variables.bat" (
+    CALL .\local_variables.bat
+)
+CALL python chat.py
