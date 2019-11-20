@@ -33,5 +33,5 @@ $("#input-form").on("submit", function(event) {
   var id = $("#input-id")[0].value;
   var msg = $("#input-msg")[0].value;
   outbox.send(JSON.stringify({ id: id, msg: msg }));
-  $("#input-text")[0].value = "";
+  $("#input-msg")[0].value = "";
 });
